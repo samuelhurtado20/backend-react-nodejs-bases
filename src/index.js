@@ -15,6 +15,7 @@ const corsOptions =
 
 app.set('Port', 4020)
 app.use(morgan('dev'))
+
 //app.use(bodyparser.urlencoded({extended:true})))
 app.use(cors());
 app.use(bodyparser.json())
