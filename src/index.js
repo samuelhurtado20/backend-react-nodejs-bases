@@ -21,7 +21,7 @@ app.use(cors());
 app.use(bodyparser.json())
 //routes
 //app.use('/api/test/', require('./routes/test.route'))
-app.use('/api/test/', cors(corsOptions), require('./routes/test.route'));
+app.use('/api/test/', cors(corsOptions), require('./routes/Employee.route'));
 //start server
 app.listen(app.get('Port'), ()=>{
     console.log('LISTEN on port', app.get('Port'))
